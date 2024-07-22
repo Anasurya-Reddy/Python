@@ -1,0 +1,20 @@
+import datetime
+
+def get_day_of_week(date_str):
+    # Parse the input date string to a datetime object
+    date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d')
+    
+    # Get the day of the week as an integer (Monday is 0 and Sunday is 6)
+    day_of_week_num = date_obj.weekday()
+    
+    # Create a list of day names
+    days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    
+    # Get the corresponding day name
+    day_of_week = days_of_week[day_of_week_num]
+    
+    return day_of_week
+
+# Example usage
+date_str = '2024-07-22'
+print(f"The day of the week for {date_str} is {get_day_of_week(date_str)}.")
