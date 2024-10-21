@@ -1,7 +1,9 @@
-# 3.Write a python program to che k if the given string is palindrome or not.
-str = input("Enter a Sring: ")
-rev = str[::-1]
-if str == rev :
-    print("Given string is a palindrome")
-else :
-     print("Given string is a not palindrome")
+def GCD(m,n):
+    if n==0:
+        return m
+    else:
+        return GCD(n,m%n)
+
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+print("GCD = ",GCD(a,b))

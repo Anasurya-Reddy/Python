@@ -1,5 +1,10 @@
-# 6.Write a python program to print even length words in a string.
-str = input("Enter a String: ").split()
-for i in str:
-    if len(i)%2==0:
-        print(i)
+def flatList(l):
+    fl = []
+    for i in l:
+        for j in i:
+            fl.append(j)
+    return fl
+
+list = [[1,2,3],[4,5],[6,7,8,9]]
+print("Given List :", list)
+print("Flattened List is ",flatList(list))

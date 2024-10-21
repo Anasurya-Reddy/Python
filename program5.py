@@ -1,7 +1,8 @@
-# 5.Write a python program to count the number of vowels in the string.
-str = input("Enter a String: ")
-count=0
-for i in str:
-    if i in {"a",'e','i','o','u'}:
-        count += 1
-print(count)
+def SecLarge(l):
+    l.sort()
+    return l[-2]
+
+
+list = [1,2,3,4,5,6,7,8,9]
+print("Given List :", list)
+print("Second Largest Number in given List is ",SecLarge(list))

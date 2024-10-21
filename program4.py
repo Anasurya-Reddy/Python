@@ -1,6 +1,7 @@
-# 4.Write a python program to find the length of the string without using the len() method.
-str = input("Enter a String: ")
-count=0
-for i in str:
-    count += 1
-print(count)
+def MaxMin(l):
+    print("Largest Number : ",max(l))
+    print("Smallest Number : ",min(l))
+
+list = [1,2,3,4,5,6,7,8,9]
+print("Given List :", list)
+MaxMin(list)
